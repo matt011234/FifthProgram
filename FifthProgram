@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+public class FifthProgram 
+{
+
+public static double FtoC(double fah)
+  	{
+   		double celsius;
+		celsius = 5/9 * (fahrenheit - 32);
+return celsius;
+ 	}
+
+
+
+public static double CtoF(double cel)
+   	{
+   		double farenheit;
+   		fahrenheit = 9/5 * celsius + 32;
+   		return fahrenheit
+   	}
+
+public static void main(String args[])
+   	{
+   		String fInput = JOptionPane.showInputDialog("Enter a temperature in Fahrenheit");
+   		double fVal = Double.parseDouble(fInput);
+   		
+   		double cConv = FtoC(fVal);
+   		
+   		JOptionPane.showMessageDialog(null,fInput+"F is "+cConv+"C.");  
+   			
+   		String cInput = JOptionPane.showInputDialog("Enter a temperature in celsius");
+		double cVal = Double.parseDouble(cInput);
+	
+	double fVal = CtoF(cVal);
+
+		JOptionPane.showMessageDialog(null,cInput+"C is "+fConv+"F.");
+   }
+
+
+
